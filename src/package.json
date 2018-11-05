@@ -1,0 +1,23 @@
+{
+  "name": "eazee-peazee",
+  "version": "1.0.0",
+  "description": "A recipe management and planning tool",
+  "main": "index.js",
+  "dependencies": {
+    "hyperapp": "^1.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvernagus/eazee-peazee.git"
+  },
+  "author": "Ray Vernagus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rvernagus/eazee-peazee/issues"
+  },
+  "homepage": "https://github.com/rvernagus/eazee-peazee#readme"
+}
