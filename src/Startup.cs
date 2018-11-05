@@ -26,7 +26,7 @@ namespace src
                 app.UseDeveloperExceptionPage();
             }
 
-            // app.UseDefaultFiles();
+            app.UseNodeModules(env);
             app.UseStaticFiles();
             app.UseMvc();
         }
