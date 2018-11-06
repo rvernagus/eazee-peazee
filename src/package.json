@@ -2,7 +2,7 @@
   "name": "eazee-peazee",
   "version": "1.0.0",
   "description": "A recipe management and planning tool",
-  "main": "index.js",
+  "main": "site.js",
   "dependencies": {
     "bulma": "^0.7.2",
     "hyperapp": "^1.2.9"
