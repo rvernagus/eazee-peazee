@@ -9,6 +9,9 @@ eazee-peazee
 <p class="subtitle">
 Recipes
 </p>
-@foreach (var recipe in Model.Recipes) {
-    <div>@recipe.Name</div>
-}
+<div class="content">
+  <ol type="1">
+    @foreach (var recipe in Model.Recipes) {
+        <li>@recipe.Name</li>
+    }
+  </ol>
