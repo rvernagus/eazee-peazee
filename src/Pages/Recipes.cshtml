@@ -1,4 +1,5 @@
 @page
+@model EazeePeazee.Pages.RecipesModel
 @{
     Layout = "_Layout";
 }
@@ -8,3 +9,6 @@ eazee-peazee
 <p class="subtitle">
 Recipes
 </p>
+@foreach (var recipe in Model.Recipes) {
+    <div>@recipe.Name</div>
+}
