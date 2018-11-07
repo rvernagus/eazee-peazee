@@ -12,7 +12,7 @@ Recipes
 <div class="content">
   <ol type="1">
     @foreach (var recipe in Model.Recipes) {
-        <li>@recipe.Name</li>
+        <li><a href="~/recipes/@recipe.Id">@recipe.Name</a></li>
     }
   </ol>
 </div>

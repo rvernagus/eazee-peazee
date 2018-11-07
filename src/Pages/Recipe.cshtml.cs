@@ -4,11 +4,13 @@ namespace EazeePeazee.Pages
 {
     public class RecipeModel : PageModel
     {
+        public int Id { get; set; }
         public string Name { get; set; } = "";
 
-        public void OnGet(string id)
+        public void OnGet(int id)
         {
-            Name = id;
+            Id = id;
+            Name = "My Recipe";
         }
     }
 }
