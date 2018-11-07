@@ -3,19 +3,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EazeePeazee.Pages
 {
-    public class Recipe
-    {
-        public string Name { get; set; } = "";
-    }
-
     public class RecipesModel : PageModel
     {
         public RecipesModel()
         {
-            Recipes.Add(new Recipe { Name = "Roasted Chicken" });
-            Recipes.Add(new Recipe { Name = "Instant Pot Chicken Marinara" });
+            Recipes.Add(new RecipeModel { Name = "Roasted Chicken" });
+            Recipes.Add(new RecipeModel { Name = "Instant Pot Chicken Marinara" });
         }
 
-        public IList<Recipe> Recipes { get; private set; } = new List<Recipe>();
+        public IList<RecipeModel> Recipes { get; private set; } = new List<RecipeModel>();
     }
 }
