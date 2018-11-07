@@ -26,7 +26,6 @@ namespace EazeePeazee
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseNodeModules(env);
             app.UseStaticFiles();
             app.UseMvc();
         }
