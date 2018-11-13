@@ -1,21 +1,12 @@
 @page "~/recipes/new"
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "_Layout";
 }
 <div class="is-size-4">Create a new recipe:</div>
 <form>
-    <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="e.g., Roasted Chicken">
-        </div>
-    </div>
-    <div class="field">
-        <label class="label">Instructions</label>
-        <div class="control">
-            <textarea class="textarea" placeholder="Instructions"></textarea>
-        </div>
-    </div>
+    <partial name="_TextInput" model='new EazeePeazee.Pages.TextInputModel { Label = "Name", Placeholder = "e.g., Roasted Chicken" }' />
+    <partial name="_TextAreaInput" model='new EazeePeazee.Pages.TextAreaInputModel { Label = "Instructions", Placeholder = "e.g., Cook at 400 degrees for 30 minutes" }' />
     <div class="is-size-4">Ingredients</div>
     <div class="field is-horizontal">
         <div class="field-label is-normal">
